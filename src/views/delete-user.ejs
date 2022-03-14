@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DELETE</title>
+</head>
+<body>
+    <h1>Eliminar Usuario</h1>
+
+    <form action="/users/delete/<%= users[0]['id'] %>" method="post">
+        <h2>¿Seguro que quieres borrar a <span style="color: brown;"><%= users[0]['name'] %></span> con id <span style="color: brown;"><%= users[0]['id'] %></span>?</h2>
+        <input type="submit" value="eliminar">
+        <a href="/users/all" id="btn-create">Cancelar</a>    
+    </form>
+
+</body>
+</html>

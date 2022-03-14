@@ -1,0 +1,7 @@
+La carpeta public almacena archivos estaticos, los cuales son 
+archivos html, css, js e imagenes que puede ser visualizadas 
+directamente desde el navegador 
+
+ejemplo:
+http://localhost:3000/js/index.js   javascript de la aplicacion 
+http://localhost:3000/css/styles.css   estilos de la aplicacion 

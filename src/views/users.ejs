@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Todos los usuarios</h1>
+    <!-- Crear usuario nuevo  -->
+    <td ></td><a href="/users/create" id="btn-create">Crear usuario</a></td>
+    <!-- Consultar info  -->
+    <td ></td><a href="/users/consult" id="btn-create">Consultar</a></td>
+    <div style="clear: both;"></div>
+   <table>
+       <% users.forEach((item)=>{ %>
+        <tr>
+            <td></td>
+        </tr>
+        <tr style="background-color: rgb(105, 209, 123); font-weight: bold;">
+            <td>ID</td>
+            <td colspan="2">Nombre Completo</td>
+            <td>Edad</td>
+            <td>Modificar</td>
+            <td>Eliminar</td>
+        </tr>
+        <tr>
+            <td><%= item.id %></td>
+            <td colspan="2"><%= `${item.name} ${item.ApePaterno} ${item.ApeMaterno}` %></td>
+            <td><%= item.age %></td>
+            <td><a href="/users/update/<%= item.id %>" id="btn-update">Modificar</a></td>
+            <td><a href="/users/delete/<%= item.id %>" id="btn-delete">Eliminar</a></td>
+
+            <tr>
+                <td colspan="6" style="background-color: rgb(208, 253, 216); font-weight: bold;">Informacion personal</td>
+           </tr>
+           <tr style="background-color: rgb(105, 209, 123); font-weight: bold;">
+                <td>Gmail</td>
+                <td>Curp</td>
+                <td>Telefono</td>
+                <td>Domicilio</td>
+                <td>Ciudad</td>
+                <td>INE</td>
+           </tr>
+           <tr>
+                <tr>
+                    <td><%= item.gmail %></td>
+                    <td><%= item.curp %></td>
+                    <td><%= item.telefono %></td>
+                    <td><%= item.domicilio %></td>
+                    <td><%= item.ciudad %></td>
+                    <td><img src="/<%= item.img %>" alt="INE" width="50px"></td>
+                </tr>
+           </tr>
+        </tr>
+       <% }) %>
+       <!-- Los atributos COLSPAN y ROWSPAN nos permiten crear celdas que
+         se extiendan varias columnas o varias filas. -->
+
+   </table>
+
+</body>
+</html>

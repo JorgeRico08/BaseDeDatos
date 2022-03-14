@@ -1,0 +1,59 @@
+table{
+    margin: 30px auto;
+}
+
+tr{
+    text-align: center;
+}
+
+td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#btn-update{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+#btn-delete{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(238, 26, 26);
+    padding: 15px;
+}
+
+#btn-delete:hover{
+    background-color: rgb(97, 96, 96);
+    color: #ddd;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#btn-update:hover{
+    background-color: rgb(97, 96, 96);
+    color: #ddd;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+#btn-create{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(19, 108, 167);
+    padding: 15px;
+    float: right;
+    display: block;
+    margin-right: 20%;
+    box-sizing: border-box;
+}
+
+#btn-create:hover{
+    background-color: rgb(97, 96, 96);
+    color: #ddd;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
